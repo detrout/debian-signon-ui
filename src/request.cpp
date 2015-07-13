@@ -47,13 +47,13 @@
 #include <QVBoxLayout>
 #if QT_VERSION < QT_VERSION_CHECK(5, 0, 0)
 #include <QX11Info>
+#include <X11/Xlib.h>
 #endif
 #if HAS_FOREIGN_QWINDOW
 #include <QWindow>
 #endif
 #include <SignOn/uisessiondata.h>
 #include <SignOn/uisessiondata_priv.h>
-#include <X11/Xlib.h>
 
 using namespace SignOnUi;
 using namespace com::canonical;
