@@ -47,13 +47,13 @@
 #include <QVBoxLayout>
 #if QT_VERSION < QT_VERSION_CHECK(5, 0, 0)
 #include <QX11Info>
+#include <X11/Xlib.h>
 #endif
 #if HAS_FOREIGN_QWINDOW
 #include <QWindow>
 #endif
 #include <SignOn/uisessiondata.h>
 #include <SignOn/uisessiondata_priv.h>
-#include <X11/Xlib.h>
 
 using namespace SignOnUi;
 using namespace com::canonical;
@@ -315,7 +315,7 @@ Request *Request::newRequest(const QDBusConnection &connection,
         /* We need to use the RemoteRequest implementation in UbuntuTouch,
          * because displaying of QtWidgets is not working there. This is a
          * workaround which can be revisited later. */
-        if (QGuiApplication::platformName() != "xcb" ||
+        if (QGuiApplication::platformName().startsWith("ubuntu") ||
             qgetenv("SSOUI_USE_UBUNTU_WEB_VIEW") == QByteArray("1")) {
             return new UbuntuBrowserRequest(connection, message,
                                             parameters, parent);

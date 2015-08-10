@@ -27,7 +27,8 @@ PKGCONFIG += \
 lessThan(QT_MAJOR_VERSION, 5) {
     PKGCONFIG += \
         accounts-qt \
-        libsignon-qt
+        libsignon-qt \
+        x11
 } else {
     QT += \
         webkitwidgets \
