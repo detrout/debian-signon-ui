@@ -4,6 +4,7 @@ signon-ui (0.17+15.04.20150810) UNRELEASED; urgency=medium
   * Change mantainer to Debian qt-kde team, add myself as uploader
   * Use QT_SELECT=qt5 in rules instead of qt5-default in build-dep
   * Remove ubuntu-specific version number from qtbase5-dev
+  * Disable qtlocation5-dev from build-dep as Debian doesn't have it.
 
  -- Diane Trout <diane@debian.org>  Sun, 13 Sep 2015 18:22:57 -0700
 
