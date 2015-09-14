@@ -1,0 +1,21 @@
+Debian Release
+--------------
+
+This pacakge is actually a piece of software maintained by
+Canonical for Ubuntu, so the official upstream source is
+in launchpad bzr, and has a debian/ directory in the upstream
+source.
+
+To create a repository that seems compatible with the normal
+Qt KDE team I did the following
+
+$ mkdir signon-ui
+$ cd signon-ui
+$ git init
+$ git remote add upstream bzr::lp:~online-accounts/signon-ui/trunk
+$ git merge master <upstream tag>
+<modified debian dir>
+
+I don't know how this will work when I need to merge another update.
+
+ -- Diane Trout <diane@ghic.org>, Sun, 13 Sep 2015 21:30:11 -0700
