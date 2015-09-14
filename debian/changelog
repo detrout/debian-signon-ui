@@ -6,6 +6,7 @@ signon-ui (0.17+15.04.20150810) UNRELEASED; urgency=medium
   * Remove ubuntu-specific version number from qtbase5-dev
   * Disable qtlocation5-dev from build-dep as Debian doesn't have it.
   * Bump standards version to 3.9.6. No changes needed.
+  * Add xuath to build-dep, its not installed by default in Debian
 
  -- Diane Trout <diane@debian.org>  Sun, 13 Sep 2015 18:22:57 -0700
 
