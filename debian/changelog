@@ -1,6 +1,7 @@
 signon-ui (0.17+15.04.20150410) UNRELEASED; urgency=medium
 
   * Prepare Debian release from ubuntu tag.
+  * Change mantainer to Debian qt-kde team, add myself as uploader
 
  -- Diane Trout <diane@debian.org>  Sun, 13 Sep 2015 18:22:57 -0700
 

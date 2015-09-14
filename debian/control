@@ -1,7 +1,8 @@
 Source: signon-ui
 Section: gnome
 Priority: optional
-Maintainer: Ubuntu Desktop Team <ubuntu-desktop@lists.ubuntu.com>
+Maintainer: Debian/Kubuntu Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>
+Uploaders: Diane Trout <diane@debian.org>
 Build-Depends: dbus-test-runner,
                debhelper (>= 9),
                gdb,
